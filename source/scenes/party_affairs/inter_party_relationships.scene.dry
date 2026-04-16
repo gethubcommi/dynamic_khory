@@ -9,7 +9,7 @@ card-image: img/weimar_coalition_2.jpg
 
 = Inter-Party Relationships
 
-The [span style="color: #00008B;">Solidarity Movement</span>] cannot govern by itself yet.
+The [<span style="color: #00008B;">Solidarity Movement</span>] cannot govern by itself yet.
 
 Because we do not have an electoral majority, we need the support of other parties. 
 
@@ -20,6 +20,7 @@ Currently, we are in government under FM [<span style="color: #00008B;">Svaro Mo
 - @liberals_ddp: Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
 - @dnvp: Open dialogue with [<span style="color: #ffb09c;">Khorian Democrats</span>].
 - @kpd: Perhaps we could work with the [<span style="color: #700000;">DLPK</span>]?
+-@custom: We can contact our old friends at the [<span style="color:#8B4000;">Conservative Party</span>].
 - @spd_alone: The [<span style="color: #00008B;">Solidarity Movement</span>] can stand alone for now.
 - @easy_discard
 
@@ -28,6 +29,12 @@ subtitle: -19 resources
 choose-if: resources >= 19
 unavailable-subtitle: Why would we do this?
 on-arrival: resources -= 19; kpd_inter_party_seen += 1
+
+@custom
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources
+on-arrival: resources -= 1
 
 @center
 subtitle: -1 resources
