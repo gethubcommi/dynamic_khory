@@ -11,12 +11,12 @@ card-image: img/weimar_coalition_2.jpg
 
 [span style="color: #00008B;">**Solidarity**</span>] cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. 
 Currently, we are in government under FM [<span style="color: #00008B;">**Svaro Modsize**</span>].
-- @liberals:Perhaps we could reconcile with the [<span style="color: #90EE90;">PDDP</span>] after we expulsed them from government?
-- @liberals_ddp:Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
-- @center:Reaffirm our ties with the [<span style="color: #00FF00;">Independent Peasants Association</span>].
-- @dnvp:Open dialogue with [<span style="color: #ffb09c;">Khorian Democrats</span>].
-- @kpd:Perhaps we could work with the [<span style="color: #700000;">DLPK</span>]?
-- @spd_alone:[<span style="color: ##00008B;">Solidarity</span>] can stand alone for now.
+- @liberals: Perhaps we could reconcile with the [<span style="color: #90EE90;">PDDP</span>] after we expulsed them from government?
+- @liberals_ddp: Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
+- @center: Reaffirm our ties with the [<span style="color: #00FF00;">Independent Peasants Association</span>].
+- @dnvp: Open dialogue with [<span style="color: #ffb09c;">Khorian Democrats</span>].
+- @kpd: Perhaps we could work with the [<span style="color: #700000;">DLPK</span>]?
+- @spd_alone: [<span style="color: ##00008B;">Solidarity</span>] can stand alone for now.
 - @easy_discard
 
 
@@ -397,32 +397,6 @@ Due to our shared values of wholesomeness and love, we have agreed to run a join
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
-@nsdap
-view-if: wacky_weimar
-choose-if: resources >= 1 and saxony_nsdap
-unavailable-subtitle: [? if resources < 1: Not enough resources. ?] [? if not saxony_nsdap: Gregor Strasser have a position in the Saxon state government in order to wholesomeify him via governmental participation. ?]
-on-arrival: resources -= 1; nsdap_relation += 10*(1-dissent); pro_republic += 3; left_dissent += 10; center_dissent += 10
-
-We have began our work in wholesomeifying Gregor Strasser, who is beginning to form a moderate pro-democratic <span style="color: #7A3C00;">National Social Democratic</span> faction within the <span style="color: #7A3C00;">**NSDAP**</span> under Hitler's nose. Our Left and Center factions voice their disapproval.
-
-- @nsdap_wholesome
-- @nsdap_wholesome_2
-
-@nsdap_wholesome
-title: Create the anti-Liberal Front.
-unavailable-subtitle: [? if nsdap_relation < 50: We need higher relations. ?][? if harzburg_front_seen: The Harzburg Front already exists. ?]
-choose-if: nsdap_relation >= 50 and not harzburg_front_seen
-on-arrival: workers_ddp = 0; new_middle_ddp = 0; old_middle_ddp = 0; rural_ddp = 0; catholics_ddp = 0; unemployed_ddp = 0; workers_dvp = 0; new_middle_dvp = 0; old_middle_dvp = 0; rural_dvp = 0; catholics_dvp = 0; unemployed_dvp = 0; workers_lvp = 0; new_middle_lvp = 0; old_middle_lvp = 0; rural_lvp = 0; catholics_lvp = 0; unemployed_lvp = 0; ddp_relation = 0; lvp_relation = 0; dvp_relation = 0; z_relation += 20; dnvp_relation += 20
-
-We have formed the anti-Liberal front with Strasser's faction within the <span style="color: #7A3C00;">**NSDAP**</span>. The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and <span style="color: #3E88B3;">**DNVP**</span> also join in.
-
-@nsdap_wholesome_2
-title: Merge the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> and the Harzburg Front.
-unavailable-subtitle: [? if nsdap_relation < 50: We need higher relations. ?][? if not harzburg_front_seen: The Harzburg Front hasn't been invented yet. ?]
-choose-if: nsdap_relation >= 50 and harzburg_front_seen
-on-arrival: rb_strength += sa_strength; rb_strength += sh_strength; rb_militancy += 0.5; sa_strength = 0; sh_strength = 0
-
-The <span style="color: #3E88B3;">**Stahlhelm**</span> and <span style="color: #7A3C00;">**SA**</span> has dissolved and joined the Reichsbanner!
 
 @spd_alone
 
