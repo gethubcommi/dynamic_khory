@@ -11,12 +11,12 @@ card-image: img/weimar_coalition_2.jpg
 
 [span style="color: #00008B;">**Solidarity**</span>] cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. 
 Currently, we are in government under FM [<span style="color: #00008B;">**Svaro Modsize**</span>].
-- @liberals: Perhaps we could reconcile with the [<span style="color: #90EE90;">PDDP</span>] after we expulsed them from government?
-- @liberals_ddp: Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
-- @center: Reaffirm our ties with the [<span style="color: #00FF00;">Independent Peasants Association</span>].
-- @dnvp: Open dialogue with [<span style="color: #ffb09c;">Khorian Democrats</span>].
-- @kpd: Perhaps we could work with the [<span style="color: #700000;">DLPK</span>]?
-- @spd_alone: [<span style="color: ##00008B;">Solidarity</span>] can stand alone for now.
+- @liberals:Perhaps we could reconcile with the [<span style="color: #90EE90;">PDDP</span>] after we expulsed them from government?
+- @liberals_ddp:Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
+- @center:Reaffirm our ties with the [<span style="color: #00FF00;">Independent Peasants Association</span>].
+- @dnvp:Open dialogue with [<span style="color: #ffb09c;">Khorian Democrats</span>].
+- @kpd:Perhaps we could work with the [<span style="color: #700000;">DLPK</span>]?
+- @spd_alone:[<span style="color: #00008B;">Solidarity</span>] can stand alone for now.
 - @easy_discard
 
 
@@ -24,7 +24,7 @@ Currently, we are in government under FM [<span style="color: #00008B;">**Svaro 
 subtitle: -19 resources
 choose-if: resources >= 19
 unavailable-subtitle: Why would we do this?
-on-arrival: resources -= 1; kpd_inter_party_seen += 1
+on-arrival: resources -= 19; kpd_inter_party_seen += 1
 go-to: kpd_blutmai if blutmai = 1; kpd_1 if blutmai = 0 and kpd_coalition_success = 0 and (kpd_relation < 40 or kpd_rectifed_history = 1); kpd_rectification_of_history if kpd_relation >= 40 and kpd_rectified_history = 0; kpd_2 if kpd_coalition_success = 1 and kpd_rectified_history = 1
 
 @kpd_1
