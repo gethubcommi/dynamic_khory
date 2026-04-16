@@ -17,7 +17,7 @@ Currently, we are in government under FM [<span style="color: #00008B;">Svaro Mo
 
 - @liberals: Perhaps we could reconcile with the [<span style="color: #90EE90;">PDDP</span>] after we expulsed them from government?
 - @center: Reaffirm our ties with the [<span style="color: #00FF00;">Independent Peasants Association</span>].
-- @liberals_ddp: Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
+- @let: Strengthen our bonds with [<span style="color: #ADD8E6;">Unite! The Liberals</span>].
 - @dnvp: Open dialogue with [<span style="color: #ffb09c;">Khorian Democrats</span>].
 - @kpd: Perhaps we could work with the [<span style="color: #700000;">DLPK</span>]?
 -@cus: We can contact our old friends at the [<span style="color:#8B4000;">Conservative Party</span>].
@@ -43,6 +43,14 @@ view-if: not cvp_formed
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; z_relation += 2 if z_ideology == "Left"
+
+@let
+subtitle: -1 resources
+view-if: not cvp_formed
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; z_relation += 2 if z_ideology == "Left"
+
 
 @center_op
 on-arrival: z_relation += 5*(1 - dissent)
