@@ -30,7 +30,7 @@ choose-if: resources >= 19
 unavailable-subtitle: Why would we do this?
 on-arrival: resources -= 19; kpd_inter_party_seen += 1
 
-@custom
+@cus
 subtitle: -1 resources
 view-if: not cvp_formed
 choose-if: resources >= 1
