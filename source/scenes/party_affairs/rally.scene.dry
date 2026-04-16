@@ -71,12 +71,12 @@ The <span style="color: #7A3C00;">**SA**</span> have won this show of strength.
 
 Mass rallies are a common feature of <span style="color: #c00000;">social democratic</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
 
-- @class_struggle: The class struggle of the proletariat against the bourgeoisie.
-- @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
-- @democracy: Expanding our nascent democracy and defending it against <span style="color: #808080;">dictatorship</span> and <span style="color: #7A3C00;">fascism</span>.
+- @class_struggle: Continuing religious policies and protecting the church.
+- @welfare: The maintenance and expansion of social welfare programs.
+- @democracy: Expanding our nascent democracy and defending it against <span style="color: #808080;">dictatorship</span> and <span style="color: #700000;">communism</span>.
 - @pacifism: Opposing war, nationalism, and militarism at all costs.
 - @wtb: Support the WTB plan!
-- @local: A mixture of various local and national concerns that resonate most with the audience.
+- @local: Rally agaisnt the <span style="color: #FF474C;">Khorian Democrats</span> and <span style="color: #700000;">DLPK</span>., death to the <span style="color: #700000;">communists</span>.
 - @easy_discard
 
 @class_struggle
@@ -116,5 +116,7 @@ The WTB plan has become a popular rallying cry for our party. The workers are ea
 
 @local
 on-arrival: workers_spd += 3*(1-dissent); old_middle_spd += 1*(1-dissent); new_middle_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent);
+choose-if: if resources >= 19
+unavailable-subtitle: Are we lunatics?!
 
 Our speakers have gauged the mood and are speaking to the issues that seem to most affect the workers in this moment.
