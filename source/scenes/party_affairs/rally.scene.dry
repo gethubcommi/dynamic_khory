@@ -113,10 +113,11 @@ on-arrival: workers_spd += 3*(1-dissent); unemployed_spd += 3*(1-dissent); rural
 
 The WTB plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
-
 @local
-on-arrival: workers_spd += 3*(1-dissent); old_middle_spd += 1*(1-dissent); new_middle_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent);
-choose-if: if resources >= 19
+subtitle: -19 resources
+choose-if: resources >= 19
 unavailable-subtitle: Are we lunatics?!
+on-arrival: workers_spd += 3*(1-dissent); old_middle_spd += 1*(1-dissent); new_middle_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent);
+
 
 Our speakers have gauged the mood and are speaking to the issues that seem to most affect the workers in this moment.
